@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D17A2A94-9973-4D12-94A7-E09D71EA03A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Qbes.Client.Logic</RootNamespace>
+    <AssemblyName>Qbes.Client.Logic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Debug\Qbes.Client.Logic.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Qbes.Client.Logic.xml</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\Qbes.Client.Entities.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\Qbes.Client.Entities.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDiag|AnyCPU'">
+    <OutputPath>bin\ReleaseDiag\</OutputPath>
+    <DefineConstants>TRACE;DIAG</DefineConstants>
+    <DocumentationFile>bin\Release\Qbes.Client.Logic.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDiag|x86'">
+    <OutputPath>bin\x86\ReleaseDiag\</OutputPath>
+    <DefineConstants>TRACE;DIAG</DefineConstants>
+    <DocumentationFile>bin\Release\Qbes.Client.Entities.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lidgren.Network, Version=2012.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkCommsDotNetCore">
+      <HintPath>..\..\lib\NetworkCommsDotNetCore.dll</HintPath>
+    </Reference>
+    <Reference Include="SdlDotNet">
+      <HintPath>..\..\lib\SdlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.OpenGl">
+      <HintPath>..\..\lib\Tao.OpenGl.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Sdl">
+      <HintPath>..\..\lib\Tao.Sdl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="ClientArea.cs" />
+    <Compile Include="ClientBox.cs" />
+    <Compile Include="ClientSegment.cs" />
+    <Compile Include="ClientWorldManager.cs" />
+    <Compile Include="ClientWorldManager.Gl.cs" />
+    <Compile Include="ClientWorldManager.Input.cs" />
+    <Compile Include="Configuration\ClientConfiguration.cs" />
+    <Compile Include="Configuration\CustomizationConfiguration.cs" />
+    <Compile Include="Configuration\InputConfiguration.cs" />
+    <Compile Include="Configuration\NetworkConfiguration.cs" />
+    <Compile Include="Configuration\VideoConfiguration.cs" />
+    <Compile Include="Constants\SpecialMessageIDs.cs" />
+    <Compile Include="DiagnosticsManager.cs" />
+    <Compile Include="DisplayListManager.cs" />
+    <Compile Include="Exceptions\DuplicateTerrainMessageException.cs" />
+    <Compile Include="Exceptions\NotClientBoxException.cs" />
+    <Compile Include="Exceptions\NotClientSegmentException.cs" />
+    <Compile Include="Exceptions\NotPlayerEntityException.cs" />
+    <Compile Include="Extensions\EntityExtensions.cs" />
+    <Compile Include="Extensions\PlayerExtensions.cs" />
+    <Compile Include="FontInfo.cs" />
+    <Compile Include="GameProviders\MultiPlayerProvider.ClientToServer.cs" />
+    <Compile Include="GameProviders\MultiPlayerProvider.ServerToClient.cs" />
+    <Compile Include="GameProviders\SinglePlayerProvider.cs" />
+    <Compile Include="GameProviders\SinglePlayerProvider.ServerToClient.cs" />
+    <Compile Include="GameProviders\SinglePlayerProvider.ClientToServer.cs" />
+    <Compile Include="GameProviders\MultiPlayerProvider.cs" />
+    <Compile Include="Networking\ClientConnection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextureManager.cs" />
+    <Compile Include="VertexArray.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Qbes.Client.Diagnostics\Qbes.Client.Diagnostics.csproj">
+      <Project>{9EDEBEFD-C7E5-41B9-9007-B1D90684135D}</Project>
+      <Name>Qbes.Client.Diagnostics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qbes.Common.Logic\Qbes.Common.Logic.csproj">
+      <Project>{4D158A2A-CBC7-49EC-BDA1-C059BB8D54CE}</Project>
+      <Name>Qbes.Common.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

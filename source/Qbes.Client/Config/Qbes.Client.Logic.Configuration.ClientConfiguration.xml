@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClientConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AutoSave>
+    <AutoSaveInterval>60</AutoSaveInterval>
+    <EnableAutoSave>true</EnableAutoSave>
+  </AutoSave>
+  <Customization>
+    <HudColor a="1" b="0" g="1" r="1" />
+    <SkinFileName>suit.jpg</SkinFileName>
+  </Customization>
+  <Input>
+    <MouseSensitivity>1</MouseSensitivity>
+  </Input>
+  <Network>
+    <AutoConnect>true</AutoConnect>
+    <IpAddress>127.0.0.1</IpAddress>
+    <Messaging>
+      <MaxMessageSize>1360</MaxMessageSize>
+    </Messaging>
+    <PlayerName>Myrr</PlayerName>
+    <PortTcp>6666</PortTcp>
+    <PortUdp>6666</PortUdp>
+  </Network>
+  <Video>
+    <Fog>true</Fog>
+    <ResolutionHeight>720</ResolutionHeight>
+    <ResolutionWidth>1280</ResolutionWidth>
+    <SkyColor a="1" b="0.97" g="0.87" r="0.77" />
+    <VisibilityRange>192</VisibilityRange>
+  </Video>
+</ClientConfiguration>

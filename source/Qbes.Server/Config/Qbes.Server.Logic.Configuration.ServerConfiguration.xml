@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServerConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AutoSave>
+    <AutoSaveInterval>60</AutoSaveInterval>
+    <EnableAutoSave>true</EnableAutoSave>
+  </AutoSave>
+  <Network>
+    <InitialMSPerKBSendTimeout>2000</InitialMSPerKBSendTimeout>
+    <MaxConnections>16</MaxConnections>
+    <MaxTerrainBatchSize>14</MaxTerrainBatchSize>
+    <Messaging>
+      <MaxMessageSize>1360</MaxMessageSize>
+    </Messaging>
+    <PortTcp>6666</PortTcp>
+    <PortUdp>6666</PortUdp>
+    <Web>
+      <Enabled>true</Enabled>
+      <Handlers>
+        <Handler>
+          <Addresses>
+            <Address>/</Address>
+            <Address>/index.htm</Address>
+            <Address>/index.html</Address>
+          </Addresses>
+          <HandlerType>Qbes.Server.Logic.Networking.Web.Pages.Home, Qbes.Server.Logic, Version=0.1.4.0, Culture=neutral, PublicKeyToken=null</HandlerType>
+        </Handler>
+      </Handlers>
+      <WebServerPort>8000</WebServerPort>
+    </Web>
+  </Network>
+  <Security>
+    <RequiresAuthentication>false</RequiresAuthentication>
+  </Security>
+  <World>
+    <LoadWholeMap>true</LoadWholeMap>
+    <NewPlayerSpawnPoint x="96" y="96" z="96" />
+  </World>
+</ServerConfiguration>

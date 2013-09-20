@@ -1,0 +1,4 @@
+SevenZip.dll has been built using the LZMA SDK (http://www.7-zip.org/sdk.html) which is part of 7-Zip (http://www.7-zip.org/) an opensource compression utility as is licensed under the LGPL license.
+
+Terms of the GNU LGPL license:
+http://www.gnu.org/copyleft/lesser.html

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Generic content XML template -->
+<Template masterTemplateName="Master.html">
+  <Content name="Content">
+    
+  </Content>
+</Template>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Template masterTemplateName="Master.html">
+  <Content name="Content">
+    <h2>Welcome to Qbes.Server web interface!</h2>
+  </Content>
+</Template>

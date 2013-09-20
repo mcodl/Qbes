@@ -1,0 +1,17 @@
+﻿2	stone		stone		stone		stone		stone		stone
+3	sand		sand		sand		sand		sand		sand
+4	badland		badland		badland		badland		badland		badland
+5	mud		mud		mud		mud		mud		mud
+6	metal		metal		metal		metal		metal		metal
+7	leaves		leaves		leaves		leaves		leaves		leaves
+8	tree		tree		tree		tree		tree		tree
+9	mud		mud		mud		mud		grass		mud
+10	coal		coal		coal		coal		coal		coal
+11	plastic		plastic		plastic		plastic		plastic		plastic
+12	mud		mud		mud		mud		snow		mud
+13	asphalt		asphalt		asphalt		asphalt		asphalt		asphalt
+14	bush		bush		bush		bush		bush		bush
+15	pavement	pavement	pavement	pavement	pavement	pavement
+16	tiles		tiles		tiles		tiles		tiles		tiles
+17	wood_planks1	wood_planks1	wood_planks1	wood_planks1	wood_planks1	wood_planks1
+18	wood_planks2	wood_planks2	wood_planks2	wood_planks2	wood_planks2	wood_planks2
